@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57978164A7B1DAB9B5114088 /* Pods_Latte_Square_Latte_SquareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9057BD104DFF3940EC2B51 /* Pods_Latte_Square_Latte_SquareUITests.framework */; };
+		7410C9C9D7D2957791CA0B4B /* Pods_Latte_SquareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0007343E4D6B49856A48FF48 /* Pods_Latte_SquareTests.framework */; };
 		FBFC4DB4298F844D00E245C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB3298F844D00E245C9 /* AppDelegate.swift */; };
 		FBFC4DB6298F844D00E245C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB5298F844D00E245C9 /* SceneDelegate.swift */; };
 		FBFC4DB8298F844D00E245C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB7298F844D00E245C9 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		FBFC4DCB298F844E00E245C9 /* Latte_SquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DCA298F844E00E245C9 /* Latte_SquareTests.swift */; };
 		FBFC4DD5298F844E00E245C9 /* Latte_SquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DD4298F844E00E245C9 /* Latte_SquareUITests.swift */; };
 		FBFC4DD7298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DD6298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift */; };
+		FE479023A922709FBBD2C4F2 /* Pods_Latte_Square.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9486BFD6573577323CEEC6 /* Pods_Latte_Square.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0007343E4D6B49856A48FF48 /* Pods_Latte_SquareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Latte_SquareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B19CA286E6612ABF78EB507 /* Pods-Latte Square-Latte SquareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte Square-Latte SquareUITests.debug.xcconfig"; path = "Target Support Files/Pods-Latte Square-Latte SquareUITests/Pods-Latte Square-Latte SquareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28E0B11254C0C185E8F738E4 /* Pods-Latte SquareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte SquareTests.release.xcconfig"; path = "Target Support Files/Pods-Latte SquareTests/Pods-Latte SquareTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E0BF5F6B5C8B992C7345859 /* Pods-Latte Square.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte Square.debug.xcconfig"; path = "Target Support Files/Pods-Latte Square/Pods-Latte Square.debug.xcconfig"; sourceTree = "<group>"; };
+		696E5B4DDEC9DCD48C95906E /* Pods-Latte SquareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte SquareTests.debug.xcconfig"; path = "Target Support Files/Pods-Latte SquareTests/Pods-Latte SquareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A9486BFD6573577323CEEC6 /* Pods_Latte_Square.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Latte_Square.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9057BD104DFF3940EC2B51 /* Pods_Latte_Square_Latte_SquareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Latte_Square_Latte_SquareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CA7554B2770C7AA10DCCE9 /* Pods-Latte Square.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte Square.release.xcconfig"; path = "Target Support Files/Pods-Latte Square/Pods-Latte Square.release.xcconfig"; sourceTree = "<group>"; };
 		FBFC4DB0298F844D00E245C9 /* Latte Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Latte Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFC4DB3298F844D00E245C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBFC4DB5298F844D00E245C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		FBFC4DD0298F844E00E245C9 /* Latte SquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latte SquareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFC4DD4298F844E00E245C9 /* Latte_SquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_SquareUITests.swift; sourceTree = "<group>"; };
 		FBFC4DD6298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_SquareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE1DBE8C37248861F9D8BF2A /* Pods-Latte Square-Latte SquareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Latte Square-Latte SquareUITests.release.xcconfig"; path = "Target Support Files/Pods-Latte Square-Latte SquareUITests/Pods-Latte Square-Latte SquareUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE479023A922709FBBD2C4F2 /* Pods_Latte_Square.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7410C9C9D7D2957791CA0B4B /* Pods_Latte_SquareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57978164A7B1DAB9B5114088 /* Pods_Latte_Square_Latte_SquareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134CA424C6C89942D50245BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BF5F6B5C8B992C7345859 /* Pods-Latte Square.debug.xcconfig */,
+				F8CA7554B2770C7AA10DCCE9 /* Pods-Latte Square.release.xcconfig */,
+				1B19CA286E6612ABF78EB507 /* Pods-Latte Square-Latte SquareUITests.debug.xcconfig */,
+				FE1DBE8C37248861F9D8BF2A /* Pods-Latte Square-Latte SquareUITests.release.xcconfig */,
+				696E5B4DDEC9DCD48C95906E /* Pods-Latte SquareTests.debug.xcconfig */,
+				28E0B11254C0C185E8F738E4 /* Pods-Latte SquareTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2D712C1B9D39BE70374292D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9486BFD6573577323CEEC6 /* Pods_Latte_Square.framework */,
+				CF9057BD104DFF3940EC2B51 /* Pods_Latte_Square_Latte_SquareUITests.framework */,
+				0007343E4D6B49856A48FF48 /* Pods_Latte_SquareTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBFC4DA7298F844D00E245C9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				FBFC4DC9298F844E00E245C9 /* Latte SquareTests */,
 				FBFC4DD3298F844E00E245C9 /* Latte SquareUITests */,
 				FBFC4DB1298F844D00E245C9 /* Products */,
+				134CA424C6C89942D50245BF /* Pods */,
+				D2D712C1B9D39BE70374292D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBFC4DDA298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte Square" */;
 			buildPhases = (
+				76A3A92518BE4D7AB9E99B31 /* [CP] Check Pods Manifest.lock */,
 				FBFC4DAC298F844D00E245C9 /* Sources */,
 				FBFC4DAD298F844D00E245C9 /* Frameworks */,
 				FBFC4DAE298F844D00E245C9 /* Resources */,
+				7BFD48ACD7400F8FACED80FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBFC4DDD298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareTests" */;
 			buildPhases = (
+				43EC1F99334A261FA5B2286B /* [CP] Check Pods Manifest.lock */,
 				FBFC4DC2298F844E00E245C9 /* Sources */,
 				FBFC4DC3298F844E00E245C9 /* Frameworks */,
 				FBFC4DC4298F844E00E245C9 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBFC4DE0298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareUITests" */;
 			buildPhases = (
+				0D90E92ACB003794A7581192 /* [CP] Check Pods Manifest.lock */,
 				FBFC4DCC298F844E00E245C9 /* Sources */,
 				FBFC4DCD298F844E00E245C9 /* Frameworks */,
 				FBFC4DCE298F844E00E245C9 /* Resources */,
+				F243BE994DDC4D125D80BA18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D90E92ACB003794A7581192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Latte Square-Latte SquareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43EC1F99334A261FA5B2286B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Latte SquareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A3A92518BE4D7AB9E99B31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Latte Square-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BFD48ACD7400F8FACED80FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Latte Square/Pods-Latte Square-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Latte Square/Pods-Latte Square-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Latte Square/Pods-Latte Square-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F243BE994DDC4D125D80BA18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Latte Square-Latte SquareUITests/Pods-Latte Square-Latte SquareUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Latte Square-Latte SquareUITests/Pods-Latte Square-Latte SquareUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Latte Square-Latte SquareUITests/Pods-Latte Square-Latte SquareUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBFC4DAC298F844D00E245C9 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		FBFC4DDB298F844E00E245C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0BF5F6B5C8B992C7345859 /* Pods-Latte Square.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +610,7 @@
 		};
 		FBFC4DDC298F844E00E245C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8CA7554B2770C7AA10DCCE9 /* Pods-Latte Square.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +639,7 @@
 		};
 		FBFC4DDE298F844E00E245C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696E5B4DDEC9DCD48C95906E /* Pods-Latte SquareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +659,7 @@
 		};
 		FBFC4DDF298F844E00E245C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E0B11254C0C185E8F738E4 /* Pods-Latte SquareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +679,7 @@
 		};
 		FBFC4DE1298F844E00E245C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B19CA286E6612ABF78EB507 /* Pods-Latte Square-Latte SquareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +697,7 @@
 		};
 		FBFC4DE2298F844E00E245C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1DBE8C37248861F9D8BF2A /* Pods-Latte Square-Latte SquareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
