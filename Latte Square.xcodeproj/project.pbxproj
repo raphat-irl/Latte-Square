@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBFC4DB4298F844D00E245C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB3298F844D00E245C9 /* AppDelegate.swift */; };
+		FBFC4DB6298F844D00E245C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB5298F844D00E245C9 /* SceneDelegate.swift */; };
+		FBFC4DB8298F844D00E245C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DB7298F844D00E245C9 /* ViewController.swift */; };
+		FBFC4DBB298F844D00E245C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC4DB9298F844D00E245C9 /* Main.storyboard */; };
+		FBFC4DBD298F844E00E245C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFC4DBC298F844E00E245C9 /* Assets.xcassets */; };
+		FBFC4DC0298F844E00E245C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFC4DBE298F844E00E245C9 /* LaunchScreen.storyboard */; };
+		FBFC4DCB298F844E00E245C9 /* Latte_SquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DCA298F844E00E245C9 /* Latte_SquareTests.swift */; };
+		FBFC4DD5298F844E00E245C9 /* Latte_SquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DD4298F844E00E245C9 /* Latte_SquareUITests.swift */; };
+		FBFC4DD7298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC4DD6298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBFC4DC7298F844E00E245C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFC4DA8298F844D00E245C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFC4DAF298F844D00E245C9;
+			remoteInfo = "Latte Square";
+		};
+		FBFC4DD1298F844E00E245C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFC4DA8298F844D00E245C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFC4DAF298F844D00E245C9;
+			remoteInfo = "Latte Square";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBFC4DB0298F844D00E245C9 /* Latte Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Latte Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFC4DB3298F844D00E245C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBFC4DB5298F844D00E245C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBFC4DB7298F844D00E245C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBFC4DBA298F844D00E245C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBFC4DBC298F844E00E245C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBFC4DBF298F844E00E245C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBFC4DC1298F844E00E245C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFC4DC6298F844E00E245C9 /* Latte SquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latte SquareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFC4DCA298F844E00E245C9 /* Latte_SquareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_SquareTests.swift; sourceTree = "<group>"; };
+		FBFC4DD0298F844E00E245C9 /* Latte SquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Latte SquareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFC4DD4298F844E00E245C9 /* Latte_SquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_SquareUITests.swift; sourceTree = "<group>"; };
+		FBFC4DD6298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latte_SquareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBFC4DAD298F844D00E245C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DC3298F844E00E245C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DCD298F844E00E245C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBFC4DA7298F844D00E245C9 = {
+			isa = PBXGroup;
+			children = (
+				FBFC4DB2298F844D00E245C9 /* Latte Square */,
+				FBFC4DC9298F844E00E245C9 /* Latte SquareTests */,
+				FBFC4DD3298F844E00E245C9 /* Latte SquareUITests */,
+				FBFC4DB1298F844D00E245C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBFC4DB1298F844D00E245C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC4DB0298F844D00E245C9 /* Latte Square.app */,
+				FBFC4DC6298F844E00E245C9 /* Latte SquareTests.xctest */,
+				FBFC4DD0298F844E00E245C9 /* Latte SquareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBFC4DB2298F844D00E245C9 /* Latte Square */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC4DB3298F844D00E245C9 /* AppDelegate.swift */,
+				FBFC4DB5298F844D00E245C9 /* SceneDelegate.swift */,
+				FBFC4DB7298F844D00E245C9 /* ViewController.swift */,
+				FBFC4DB9298F844D00E245C9 /* Main.storyboard */,
+				FBFC4DBC298F844E00E245C9 /* Assets.xcassets */,
+				FBFC4DBE298F844E00E245C9 /* LaunchScreen.storyboard */,
+				FBFC4DC1298F844E00E245C9 /* Info.plist */,
+			);
+			path = "Latte Square";
+			sourceTree = "<group>";
+		};
+		FBFC4DC9298F844E00E245C9 /* Latte SquareTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC4DCA298F844E00E245C9 /* Latte_SquareTests.swift */,
+			);
+			path = "Latte SquareTests";
+			sourceTree = "<group>";
+		};
+		FBFC4DD3298F844E00E245C9 /* Latte SquareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC4DD4298F844E00E245C9 /* Latte_SquareUITests.swift */,
+				FBFC4DD6298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift */,
+			);
+			path = "Latte SquareUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBFC4DAF298F844D00E245C9 /* Latte Square */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFC4DDA298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte Square" */;
+			buildPhases = (
+				FBFC4DAC298F844D00E245C9 /* Sources */,
+				FBFC4DAD298F844D00E245C9 /* Frameworks */,
+				FBFC4DAE298F844D00E245C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Latte Square";
+			productName = "Latte Square";
+			productReference = FBFC4DB0298F844D00E245C9 /* Latte Square.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBFC4DC5298F844E00E245C9 /* Latte SquareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFC4DDD298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareTests" */;
+			buildPhases = (
+				FBFC4DC2298F844E00E245C9 /* Sources */,
+				FBFC4DC3298F844E00E245C9 /* Frameworks */,
+				FBFC4DC4298F844E00E245C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBFC4DC8298F844E00E245C9 /* PBXTargetDependency */,
+			);
+			name = "Latte SquareTests";
+			productName = "Latte SquareTests";
+			productReference = FBFC4DC6298F844E00E245C9 /* Latte SquareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBFC4DCF298F844E00E245C9 /* Latte SquareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFC4DE0298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareUITests" */;
+			buildPhases = (
+				FBFC4DCC298F844E00E245C9 /* Sources */,
+				FBFC4DCD298F844E00E245C9 /* Frameworks */,
+				FBFC4DCE298F844E00E245C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBFC4DD2298F844E00E245C9 /* PBXTargetDependency */,
+			);
+			name = "Latte SquareUITests";
+			productName = "Latte SquareUITests";
+			productReference = FBFC4DD0298F844E00E245C9 /* Latte SquareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBFC4DA8298F844D00E245C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FBFC4DAF298F844D00E245C9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					FBFC4DC5298F844E00E245C9 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FBFC4DAF298F844D00E245C9;
+					};
+					FBFC4DCF298F844E00E245C9 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FBFC4DAF298F844D00E245C9;
+					};
+				};
+			};
+			buildConfigurationList = FBFC4DAB298F844D00E245C9 /* Build configuration list for PBXProject "Latte Square" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBFC4DA7298F844D00E245C9;
+			productRefGroup = FBFC4DB1298F844D00E245C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBFC4DAF298F844D00E245C9 /* Latte Square */,
+				FBFC4DC5298F844E00E245C9 /* Latte SquareTests */,
+				FBFC4DCF298F844E00E245C9 /* Latte SquareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBFC4DAE298F844D00E245C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFC4DC0298F844E00E245C9 /* LaunchScreen.storyboard in Resources */,
+				FBFC4DBD298F844E00E245C9 /* Assets.xcassets in Resources */,
+				FBFC4DBB298F844D00E245C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DC4298F844E00E245C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DCE298F844E00E245C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBFC4DAC298F844D00E245C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFC4DB8298F844D00E245C9 /* ViewController.swift in Sources */,
+				FBFC4DB4298F844D00E245C9 /* AppDelegate.swift in Sources */,
+				FBFC4DB6298F844D00E245C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DC2298F844E00E245C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFC4DCB298F844E00E245C9 /* Latte_SquareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC4DCC298F844E00E245C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFC4DD7298F844E00E245C9 /* Latte_SquareUITestsLaunchTests.swift in Sources */,
+				FBFC4DD5298F844E00E245C9 /* Latte_SquareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBFC4DC8298F844E00E245C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFC4DAF298F844D00E245C9 /* Latte Square */;
+			targetProxy = FBFC4DC7298F844E00E245C9 /* PBXContainerItemProxy */;
+		};
+		FBFC4DD2298F844E00E245C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFC4DAF298F844D00E245C9 /* Latte Square */;
+			targetProxy = FBFC4DD1298F844E00E245C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBFC4DB9298F844D00E245C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFC4DBA298F844D00E245C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBFC4DBE298F844E00E245C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFC4DBF298F844E00E245C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBFC4DD8298F844E00E245C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBFC4DD9298F844E00E245C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBFC4DDB298F844E00E245C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Latte Square/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBFC4DDC298F844E00E245C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Latte Square/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBFC4DDE298F844E00E245C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-SquareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Latte Square.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Latte Square";
+			};
+			name = Debug;
+		};
+		FBFC4DDF298F844E00E245C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-SquareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Latte Square.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Latte Square";
+			};
+			name = Release;
+		};
+		FBFC4DE1298F844E00E245C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-SquareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Latte Square";
+			};
+			name = Debug;
+		};
+		FBFC4DE2298F844E00E245C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Latte-SquareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Latte Square";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBFC4DAB298F844D00E245C9 /* Build configuration list for PBXProject "Latte Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFC4DD8298F844E00E245C9 /* Debug */,
+				FBFC4DD9298F844E00E245C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFC4DDA298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFC4DDB298F844E00E245C9 /* Debug */,
+				FBFC4DDC298F844E00E245C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFC4DDD298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFC4DDE298F844E00E245C9 /* Debug */,
+				FBFC4DDF298F844E00E245C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFC4DE0298F844E00E245C9 /* Build configuration list for PBXNativeTarget "Latte SquareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFC4DE1298F844E00E245C9 /* Debug */,
+				FBFC4DE2298F844E00E245C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBFC4DA8298F844D00E245C9 /* Project object */;
+}
