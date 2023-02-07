@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+
+    @IBOutlet weak var menuView: UITableView!
     
     let data: [Menu] = [
         Menu(title: "Black coffee",
@@ -68,10 +70,32 @@ class MainViewController: UIViewController {
              image: "affogato")
     ]
     
+    func setUpView(){
+        menuView.register(UINib(nibName: MainTableViewCell.identifier, bundle: nil),forCellReuseIdentifier: MainTableViewCell.identifier)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+    }
+    
+    
+    //MARK: - DataSouce & Delegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier,
+            for: indexPath as IndexPath) as? MainTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let data = data[indexPath.row]
+        cell.setCell(menu: data)
+        return cell
+        
     }
     
 }
