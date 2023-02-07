@@ -87,8 +87,6 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
              quantity: 1)
     ]
     
-    
-    
     func setUpView(){
         menuView.register(UINib(nibName: MainTableViewCell.identifier, bundle: nil),forCellReuseIdentifier: MainTableViewCell.identifier)
     }

@@ -24,6 +24,8 @@ class DetailViewController: ViewController{
     
     var menu: Menu?
     
+    var wantedQuantity: Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -35,7 +37,7 @@ class DetailViewController: ViewController{
         titleLabel.text = menu?.title
         priceLabel.text = "฿ \(String(menu?.price ?? 0))"
         descLabel.text = menu?.desc
-        quantityLabel.text = "10"
+        
         
     }
     
@@ -53,9 +55,22 @@ class DetailViewController: ViewController{
     
     @IBAction func onincreaseButtonTapped(_ sender:UIButton){
         
+        wantedQuantity += 1
+        decreaseButton.isEnabled = true
+        quantityLabel.text = String(wantedQuantity)
+        
     }
     
     @IBAction func ondecreaseButtonTapped(_ sender:UIButton){
+        
+        if wantedQuantity == 1{
+            decreaseButton.isEnabled = false
+        } else {
+            decreaseButton.isEnabled = true
+            wantedQuantity -= 1
+        }
+        quantityLabel.text = String(wantedQuantity)
+        
         
     }
     

@@ -148,6 +148,9 @@
                                                 <color key="tintColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="minus.diamond" catalog="system" title="."/>
+                                                <connections>
+                                                    <action selector="ondecreaseButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="doz-pZ-3Lq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWf-Rg-iIJ">
                                                 <rect key="frame" x="102" y="-2" width="28" height="33"/>
@@ -158,8 +161,11 @@
                                                 <color key="tintColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="plus.diamond" catalog="system" title="."/>
+                                                <connections>
+                                                    <action selector="onincreaseButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="pRx-sa-TCs"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-bw-dLq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-bw-dLq">
                                                 <rect key="frame" x="41" y="6" width="36" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="hyt-uW-rzG"/>
