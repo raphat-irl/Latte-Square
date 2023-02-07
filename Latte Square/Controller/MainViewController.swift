@@ -11,6 +11,9 @@ import UIKit
 class MainViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var menuView: UITableView!
+    @IBOutlet weak var summaryView: UIView!
+    @IBOutlet weak var yourCartButton: UIButton!
+    @IBOutlet weak var yourCartPriceLabel: UILabel!
     
     let data: [Menu] = [
         Menu(title: "Black coffee",
@@ -70,6 +73,8 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
              image: "affogato")
     ]
     
+    
+    
     func setUpView(){
         menuView.register(UINib(nibName: MainTableViewCell.identifier, bundle: nil),forCellReuseIdentifier: MainTableViewCell.identifier)
     }
@@ -96,6 +101,16 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
         cell.setCell(menu: data)
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = data[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let destinationVC = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController{
+            destinationVC.menu = data
+            
+            self.navigationController?.present(destinationVC, animated: true)
+        }
     }
     
 }

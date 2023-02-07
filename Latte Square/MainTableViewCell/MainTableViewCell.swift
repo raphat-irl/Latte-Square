@@ -27,7 +27,7 @@ class MainTableViewCell: UITableViewCell {
         
         menuImage.image = UIImage(named: menu.image)
         titleLabel.text = menu.title
-        priceLabel.text = String(menu.price)
+        priceLabel.text = "฿ \(String(menu.price))"
         
     }
     
