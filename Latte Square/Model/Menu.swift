@@ -13,5 +13,6 @@ struct Menu {
     var desc: String
     var price: Int
     var image: String
+    var quantity: Int
     
 }

@@ -50,4 +50,14 @@ class DetailViewController: ViewController{
     @IBAction func onaddToCartButtonTapped(_ sender:UIButton){
         
     }
+    
+    @IBAction func onincreaseButtonTapped(_ sender:UIButton){
+        
+    }
+    
+    @IBAction func ondecreaseButtonTapped(_ sender:UIButton){
+        
+    }
+    
+    
 }
