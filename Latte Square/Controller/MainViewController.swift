@@ -19,10 +19,6 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     var dataMenuArray = [Menu]()
     
-    let detailVC = DetailViewController()
-    
-    
-    
     let dataList: [Menu] = [
         Menu(title: "Black coffee",
              desc: "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
@@ -116,7 +112,7 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier,
-                                                       for: indexPath as IndexPath) as? MainTableViewCell else {
+            for: indexPath as IndexPath) as? MainTableViewCell else {
             return UITableViewCell()
         }
         
@@ -148,6 +144,21 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
         yourCartPriceLabel.text = "฿ \(menuSumsPrice)"
         
     }
+    
+    
+    @IBAction func onsummaryButtonTapped(){
+        moveToCartView()
+    }
+    
+    func moveToCartView(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "CartViewController")
+        as! CartViewController
+        destinationVC.cartData = dataMenuArray
+        destinationVC.delegate = self
+        self.navigationController?.present(destinationVC, animated: true )
+    }
+    
 }
 
 extension MainViewController:DetailDelegate{
@@ -166,4 +177,26 @@ extension MainViewController:DetailDelegate{
         menuView.reloadData()
         
     }
+}
+
+extension MainViewController:CartDelegate{
+    
+    func backToMain(_ menu: [Menu]) {
+        
+        var menuSumPrice: Int = 0
+        dataMenuArray = menu
+        if dataMenuArray.count == 0{
+            summaryView.isHidden = true
+            yourCartPriceLabel.text = ""
+        } else {
+            summaryView.isHidden = false
+            for item in dataMenuArray{
+                menuSumPrice += item.price * item.quantity
+                yourCartPriceLabel.text = "฿\(String(format: "%d", menuSumPrice)).00 "
+            }
+        }
+        menuView.reloadData()
+    }
+    
+    
 }

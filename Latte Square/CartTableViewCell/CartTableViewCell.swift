@@ -8,16 +8,17 @@
 import UIKit
 
 class CartTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var menuImage: UIImageView!
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    static let identifier = "CartTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

@@ -18,10 +18,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heo-sE-LKW">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heo-sE-LKW" customClass="View" customModule="Latte_Square" customModuleProvider="target">
                         <rect key="frame" x="14" y="5" width="100" height="90"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-HB-9K5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-HB-9K5">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="K8r-M8-7hN"/>
@@ -38,18 +38,23 @@
                             <constraint firstAttribute="width" constant="100" id="laz-7L-afG"/>
                             <constraint firstAttribute="height" constant="90" id="rWv-Q6-QEx"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-NF-JTh">
-                        <rect key="frame" x="128" y="7" width="14" height="17"/>
+                        <rect key="frame" x="128" y="7" width="15" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="QBh-x4-Lwq"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                         <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4x-Cf-Zu8">
-                        <rect key="frame" x="148" y="5" width="235" height="21"/>
+                        <rect key="frame" x="149" y="5" width="234" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Zeb-wC-CG9"/>
                         </constraints>
@@ -83,6 +88,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="menuImage" destination="ca2-HB-9K5" id="o10-lh-RU9"/>
+                <outlet property="priceLabel" destination="k7w-cR-VKt" id="iGd-Gs-N9d"/>
+                <outlet property="quantityLabel" destination="vBH-NF-JTh" id="ejL-ih-esg"/>
+                <outlet property="titleLabel" destination="j4x-Cf-Zu8" id="pF1-6t-SpA"/>
+            </connections>
             <point key="canvasLocation" x="78.461538461538453" y="8.5308056872037916"/>
         </tableViewCell>
     </objects>

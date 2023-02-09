@@ -50,6 +50,9 @@
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onsummaryButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="czd-gk-hga"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="฿ 100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqi-dr-sZo">
                                         <rect key="frame" x="277" y="25" width="101" height="21"/>
@@ -306,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="1561.5384615384614" y="3.5545023696682461"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="Ymy-3H-1Vk">
             <objects>
-                <viewController id="HHG-36-bxy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" id="HHG-36-bxy" customClass="CartViewController" customModule="Latte_Square" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HF9-0D-dc6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,6 +392,10 @@
                                         <constraint firstAttribute="trailing" secondItem="SIS-Yo-0gj" secondAttribute="trailing" constant="15" id="tcq-lP-WY3"/>
                                     </constraints>
                                 </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="HHG-36-bxy" id="1jl-ve-Luj"/>
+                                    <outlet property="delegate" destination="HHG-36-bxy" id="JVr-Lh-ZRb"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-ZK-fsa">
                                 <rect key="frame" x="53" y="60" width="144" height="21"/>
@@ -408,12 +415,15 @@
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="onbackButtonTapped" destination="HHG-36-bxy" eventType="touchUpInside" id="bJz-eS-ztn"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jys-Ku-rsq" customClass="View" customModule="Latte_Square" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="719" width="390" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-UE-QLE">
-                                        <rect key="frame" x="15" y="21" width="367" height="51"/>
+                                        <rect key="frame" x="13" y="21" width="367" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="367" id="22T-80-r7J"/>
                                             <constraint firstAttribute="height" constant="51" id="PlS-j6-tew"/>
@@ -426,6 +436,9 @@
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onpurchaseButtonTapped:" destination="HHG-36-bxy" eventType="touchUpInside" id="qFz-G9-kHH"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="฿ 000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWT-kh-fCr">
                                         <rect key="frame" x="284" y="36" width="87" height="21"/>
@@ -440,12 +453,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="IoS-UE-QLE" secondAttribute="trailing" constant="8" id="1gq-hG-6a3"/>
+                                    <constraint firstAttribute="trailing" secondItem="IoS-UE-QLE" secondAttribute="trailing" constant="10" id="1gq-hG-6a3"/>
                                     <constraint firstAttribute="trailing" secondItem="dWT-kh-fCr" secondAttribute="trailing" constant="19" id="7NU-XH-Xod"/>
                                     <constraint firstItem="dWT-kh-fCr" firstAttribute="top" secondItem="IoS-UE-QLE" secondAttribute="bottom" constant="-36" id="I1p-WB-3a3"/>
-                                    <constraint firstItem="IoS-UE-QLE" firstAttribute="leading" secondItem="jys-Ku-rsq" secondAttribute="leading" constant="15" id="KVi-qo-YYe"/>
+                                    <constraint firstItem="IoS-UE-QLE" firstAttribute="leading" secondItem="jys-Ku-rsq" secondAttribute="leading" constant="13" id="KVi-qo-YYe"/>
                                     <constraint firstAttribute="height" constant="125" id="Wh6-ez-F2u"/>
-                                    <constraint firstItem="dWT-kh-fCr" firstAttribute="leading" secondItem="IoS-UE-QLE" secondAttribute="trailing" constant="-98" id="cvf-WD-MUL"/>
+                                    <constraint firstItem="dWT-kh-fCr" firstAttribute="leading" secondItem="IoS-UE-QLE" secondAttribute="trailing" constant="-96" id="cvf-WD-MUL"/>
                                     <constraint firstAttribute="bottom" secondItem="IoS-UE-QLE" secondAttribute="bottom" constant="53" id="g2V-RF-eSR"/>
                                     <constraint firstItem="IoS-UE-QLE" firstAttribute="top" secondItem="jys-Ku-rsq" secondAttribute="top" constant="21" id="tTh-gc-kPT"/>
                                 </constraints>
@@ -479,6 +492,16 @@
                             <constraint firstItem="tjb-bq-krc" firstAttribute="leading" secondItem="JAr-vr-WJJ" secondAttribute="leading" id="vE2-w3-j5w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="VBn-yh-UmW" id="WKa-0Q-uFq"/>
+                        <outlet property="cartView" destination="HF9-0D-dc6" id="xzi-gQ-QUW"/>
+                        <outlet property="priceLabel" destination="e12-YR-EAs" id="un7-RN-31H"/>
+                        <outlet property="purchaseButton" destination="IoS-UE-QLE" id="5Xu-By-RUJ"/>
+                        <outlet property="taxPriceLabel" destination="SIS-Yo-0gj" id="k1K-HC-aq1"/>
+                        <outlet property="totalPriceLabel" destination="tZP-JV-fMD" id="pJe-Ex-K9S"/>
+                        <outlet property="yourCartPriceLabel" destination="dWT-kh-fCr" id="7rv-Yl-oQT"/>
+                        <outlet property="yourCartView" destination="tjb-bq-krc" id="XU2-NX-jZZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66R-Kl-bIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
