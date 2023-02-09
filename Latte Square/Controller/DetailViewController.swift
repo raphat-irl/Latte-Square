@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+protocol DetailDelegate {
+    
+    func onaddToCartButtonTapped(_ menu: Menu, quantity: Int)
+}
+
 class DetailViewController: ViewController{
     
     @IBOutlet weak var menuImage: UIImageView!
@@ -21,6 +26,8 @@ class DetailViewController: ViewController{
     @IBOutlet weak var addToCartButton: UIButton!
     
     weak var viewcontroller: DetailViewController?
+
+    var delegate: DetailDelegate?
     
     var menu: Menu?
     
@@ -43,6 +50,7 @@ class DetailViewController: ViewController{
     
     @IBAction func oncloseButtonTapped(_ sender:UIButton){
         backtoMain()
+       
     }
     
     func backtoMain(){
@@ -51,6 +59,13 @@ class DetailViewController: ViewController{
     
     @IBAction func onaddToCartButtonTapped(_ sender:UIButton){
         
+        if let menu = menu {
+            var menuToAdd = menu
+            menuToAdd.quantity = wantedQuantity
+            
+            delegate?.onaddToCartButtonTapped(menuToAdd, quantity: wantedQuantity)
+            backtoMain()
+        }
     }
     
     @IBAction func onincreaseButtonTapped(_ sender:UIButton){
@@ -70,9 +85,5 @@ class DetailViewController: ViewController{
             wantedQuantity -= 1
         }
         quantityLabel.text = String(wantedQuantity)
-        
-        
     }
-    
-    
 }

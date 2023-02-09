@@ -135,6 +135,9 @@
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onaddToCartButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="FLd-BE-d0Y"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-va-Cn2" customClass="View" customModule="Latte_Square" customModuleProvider="target">
                                         <rect key="frame" x="238" y="15" width="133" height="31"/>
@@ -147,7 +150,7 @@
                                                 </constraints>
                                                 <color key="tintColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="minus.diamond" catalog="system" title="."/>
+                                                <buttonConfiguration key="configuration" style="plain" image="minus.diamond" catalog="system" title=" "/>
                                                 <connections>
                                                     <action selector="ondecreaseButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="doz-pZ-3Lq"/>
                                                 </connections>
@@ -160,7 +163,7 @@
                                                 </constraints>
                                                 <color key="tintColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="plus.diamond" catalog="system" title="."/>
+                                                <buttonConfiguration key="configuration" style="plain" image="plus.diamond" catalog="system" title=" "/>
                                                 <connections>
                                                     <action selector="onincreaseButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="pRx-sa-TCs"/>
                                                 </connections>

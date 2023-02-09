@@ -9,13 +9,21 @@ import Foundation
 import UIKit
 
 class MainViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+    
     @IBOutlet weak var menuView: UITableView!
     @IBOutlet weak var summaryView: UIView!
     @IBOutlet weak var yourCartButton: UIButton!
     @IBOutlet weak var yourCartPriceLabel: UILabel!
     
-    let data: [Menu] = [
+    var menuSumsPrice: Int = 0
+    
+    var dataMenuArray = [Menu]()
+    
+    let detailVC = DetailViewController()
+    
+    
+    
+    let dataList: [Menu] = [
         Menu(title: "Black coffee",
              desc: "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
              price: 55,
@@ -90,7 +98,10 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func setUpView(){
         menuView.register(UINib(nibName: MainTableViewCell.identifier, bundle: nil),forCellReuseIdentifier: MainTableViewCell.identifier)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        menuView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,29 +111,59 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     //MARK: - DataSouce & Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return dataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier,
-            for: indexPath as IndexPath) as? MainTableViewCell else {
+                                                       for: indexPath as IndexPath) as? MainTableViewCell else {
             return UITableViewCell()
         }
         
-        let data = data[indexPath.row]
+        let data = dataList[indexPath.row]
         cell.setCell(menu: data)
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = data[indexPath.row]
+        let data = dataList[indexPath.row]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let destinationVC = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController{
             destinationVC.menu = data
+            destinationVC.delegate = self
             
             self.navigationController?.present(destinationVC, animated: true)
         }
     }
     
+    func calculate(){
+        
+        menuSumsPrice = 0
+        for item in dataMenuArray{
+            
+            menuSumsPrice += item.price * item.quantity
+        }
+        
+        yourCartPriceLabel.text = "฿ \(menuSumsPrice)"
+        
+    }
+}
+
+extension MainViewController:DetailDelegate{
+    
+    func onaddToCartButtonTapped(_ menu: Menu, quantity: Int) {
+        
+        summaryView.isHidden = false
+        
+        yourCartPriceLabel.text = "฿\(String(menuSumsPrice))"
+        if let index = dataMenuArray.firstIndex(where: {$0.title == menu.title}) {
+            dataMenuArray[index].quantity += menu.quantity
+        } else {
+            dataMenuArray.append(menu)
+        }
+        calculate()
+        menuView.reloadData()
+        
+    }
 }
