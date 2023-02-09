@@ -50,6 +50,8 @@ class CartViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let alert = UIAlertController(title: "Your purchased has been completed", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default) { [self] (action) in
+            cartData = []
+            
             delegate?.backToMain(self.cartData)
             self.dismiss(animated: true, completion: nil)
         }

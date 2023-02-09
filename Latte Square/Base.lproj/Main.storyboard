@@ -33,11 +33,11 @@
                                 </connections>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" id="zLx-Uo-eon">
-                                <rect key="frame" x="0.0" y="750" width="390" height="74"/>
+                                <rect key="frame" x="0.0" y="750" width="414" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le6-Kk-tax">
-                                        <rect key="frame" x="8" y="15" width="374" height="43"/>
+                                        <rect key="frame" x="10" y="15" width="398" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="lyh-lb-Gth"/>
                                             <constraint firstAttribute="height" constant="43" id="xQr-71-Ffz"/>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="฿ 100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqi-dr-sZo">
-                                        <rect key="frame" x="277" y="25" width="101" height="21"/>
+                                        <rect key="frame" x="301" y="25" width="101" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ecN-vp-lYC"/>
                                         </constraints>
@@ -65,12 +65,13 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Le6-Kk-tax" firstAttribute="leading" secondItem="zLx-Uo-eon" secondAttribute="leading" constant="8" id="0Tt-NN-cwU"/>
+                                    <constraint firstItem="Le6-Kk-tax" firstAttribute="leading" secondItem="zLx-Uo-eon" secondAttribute="leading" constant="10" id="0Tt-NN-cwU"/>
                                     <constraint firstItem="Le6-Kk-tax" firstAttribute="top" secondItem="xqi-dr-sZo" secondAttribute="bottom" constant="-31" id="6Dv-e4-meF"/>
                                     <constraint firstAttribute="bottom" secondItem="Le6-Kk-tax" secondAttribute="bottom" constant="16" id="MhN-lk-4u4"/>
-                                    <constraint firstItem="xqi-dr-sZo" firstAttribute="trailing" secondItem="Le6-Kk-tax" secondAttribute="trailing" constant="-4" id="TK9-GX-YcX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Le6-Kk-tax" secondAttribute="trailing" constant="6" id="QW2-vy-Fio"/>
+                                    <constraint firstItem="xqi-dr-sZo" firstAttribute="trailing" secondItem="Le6-Kk-tax" secondAttribute="trailing" constant="-6" id="TK9-GX-YcX"/>
                                     <constraint firstItem="Le6-Kk-tax" firstAttribute="top" secondItem="zLx-Uo-eon" secondAttribute="top" constant="15" id="c3S-eh-C2m"/>
-                                    <constraint firstItem="xqi-dr-sZo" firstAttribute="leading" secondItem="Le6-Kk-tax" secondAttribute="trailing" constant="-105" id="mI4-lc-Dmb"/>
+                                    <constraint firstItem="xqi-dr-sZo" firstAttribute="leading" secondItem="Le6-Kk-tax" secondAttribute="trailing" constant="-107" id="mI4-lc-Dmb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-db-iZs">
@@ -115,10 +116,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SlB-s1-uRS">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="341"/>
+                                <rect key="frame" x="0.0" y="-16" width="390" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="390" id="T7o-fO-Pmq"/>
-                                    <constraint firstAttribute="height" constant="341" id="kiM-UX-ur3"/>
+                                    <constraint firstAttribute="height" constant="357" id="kiM-UX-ur3"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJo-5r-9yH" customClass="View" customModule="Latte_Square" customModuleProvider="target">
@@ -146,7 +147,7 @@
                                         <rect key="frame" x="238" y="15" width="133" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2r-ry-4st">
-                                                <rect key="frame" x="11" y="-1" width="24" height="32"/>
+                                                <rect key="frame" x="6" y="-1" width="24" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="0A4-LG-Ni0"/>
                                                     <constraint firstAttribute="width" constant="24" id="3eK-fL-tRo"/>
@@ -172,7 +173,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-bw-dLq">
-                                                <rect key="frame" x="41" y="6" width="36" height="17"/>
+                                                <rect key="frame" x="25" y="6" width="36" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="hyt-uW-rzG"/>
                                                 </constraints>
@@ -185,12 +186,12 @@
                                         <constraints>
                                             <constraint firstItem="l2r-ry-4st" firstAttribute="top" secondItem="NDa-va-Cn2" secondAttribute="top" constant="-1" id="Baq-tt-8Us"/>
                                             <constraint firstAttribute="height" constant="31" id="Hlu-fH-sbQ"/>
-                                            <constraint firstItem="l2r-ry-4st" firstAttribute="leading" secondItem="NDa-va-Cn2" secondAttribute="leading" constant="11" id="LLZ-zc-Tkr"/>
+                                            <constraint firstItem="l2r-ry-4st" firstAttribute="leading" secondItem="NDa-va-Cn2" secondAttribute="leading" constant="6" id="LLZ-zc-Tkr"/>
                                             <constraint firstAttribute="width" constant="133" id="MJe-Kc-eXV"/>
                                             <constraint firstAttribute="trailing" secondItem="EWf-Rg-iIJ" secondAttribute="trailing" constant="3" id="Nk4-1K-NCK"/>
                                             <constraint firstAttribute="bottom" secondItem="b8c-bw-dLq" secondAttribute="bottom" constant="8" id="Vge-Fw-keQ"/>
-                                            <constraint firstItem="b8c-bw-dLq" firstAttribute="leading" secondItem="l2r-ry-4st" secondAttribute="trailing" constant="6" id="WCa-TC-mZq"/>
-                                            <constraint firstItem="EWf-Rg-iIJ" firstAttribute="leading" secondItem="b8c-bw-dLq" secondAttribute="trailing" constant="25" id="YE5-L7-c8F"/>
+                                            <constraint firstItem="b8c-bw-dLq" firstAttribute="leading" secondItem="l2r-ry-4st" secondAttribute="trailing" constant="-5" id="WCa-TC-mZq"/>
+                                            <constraint firstItem="EWf-Rg-iIJ" firstAttribute="leading" secondItem="b8c-bw-dLq" secondAttribute="trailing" constant="41" id="YE5-L7-c8F"/>
                                             <constraint firstItem="EWf-Rg-iIJ" firstAttribute="top" secondItem="NDa-va-Cn2" secondAttribute="top" constant="-2" id="llk-fY-OoN"/>
                                             <constraint firstItem="b8c-bw-dLq" firstAttribute="top" secondItem="NDa-va-Cn2" secondAttribute="top" constant="6" id="snm-be-GM0"/>
                                         </constraints>
@@ -237,7 +238,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=" "/>
                                 <connections>
                                     <action selector="oncloseButtonTapped:" destination="o1r-Np-8XF" eventType="touchUpInside" id="nGZ-UU-7UJ"/>
                                 </connections>
@@ -277,7 +278,7 @@
                             <constraint firstItem="weP-uY-hg8" firstAttribute="leading" secondItem="02V-FQ-hRS" secondAttribute="leading" constant="16" id="3yT-nr-L4d"/>
                             <constraint firstItem="02V-FQ-hRS" firstAttribute="trailing" secondItem="7Cb-kl-uGA" secondAttribute="trailing" constant="8.3333333333333712" id="8Wd-Gy-yW3"/>
                             <constraint firstItem="weP-uY-hg8" firstAttribute="top" secondItem="SlB-s1-uRS" secondAttribute="bottom" constant="17" id="9Dg-nG-erQ"/>
-                            <constraint firstItem="02V-FQ-hRS" firstAttribute="top" secondItem="SlB-s1-uRS" secondAttribute="top" constant="47" id="DAh-ex-Ksp"/>
+                            <constraint firstItem="02V-FQ-hRS" firstAttribute="top" secondItem="SlB-s1-uRS" secondAttribute="top" constant="63" id="DAh-ex-Ksp"/>
                             <constraint firstItem="02V-FQ-hRS" firstAttribute="trailing" secondItem="SlB-s1-uRS" secondAttribute="trailing" id="EYd-bI-797"/>
                             <constraint firstItem="gi7-M7-p7P" firstAttribute="leading" secondItem="02V-FQ-hRS" secondAttribute="leading" constant="16" id="F4w-k5-vt6"/>
                             <constraint firstItem="02V-FQ-hRS" firstAttribute="top" secondItem="0h3-zn-LH4" secondAttribute="top" constant="15" id="FLE-0c-VmF"/>
@@ -312,7 +313,7 @@
         <!--Cart View Controller-->
         <scene sceneID="Ymy-3H-1Vk">
             <objects>
-                <viewController storyboardIdentifier="CartViewController" id="HHG-36-bxy" customClass="CartViewController" customModule="Latte_Square" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" modalPresentationStyle="fullScreen" id="HHG-36-bxy" customClass="CartViewController" customModule="Latte_Square" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HF9-0D-dc6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
